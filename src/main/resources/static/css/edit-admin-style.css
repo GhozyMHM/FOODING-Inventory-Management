@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FDA766 !important;
+    overflow-x: hidden;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 45px 0 55px;
+    text-shadow: 5px 2px 6px #2b2b2b;
+    letter-spacing: 2px;
+}
+
+.sidebar,
+.content {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    margin: 0 20px;
+}
+
+.sidebar {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+    padding: 0 30px !important;
+}
+
+.sidebar a,
+.content a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar a.active {
+    color: #ee7214;
+}
+
+.admin,
+.data {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.sidebar a:hover,
+.content a:hover {
+    color: #f08b3d;
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+.content {
+    height: auto;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.content i {
+    margin-right: 5px;
+}
+
+.content a.editdata {
+    float: right;
+    margin: 30px 20px 0 0;
+    font-size: 15px;
+    visibility: hidden;
+}
+
+.profile {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.content h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+}
+
+.content img {
+    width: 200px;
+}
+
+form {
+    margin-top: 60px;
+}
+
+label,
+input {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-size: 13.5px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: none !important;
+    border-bottom: 2px solid orange !important;
+    font-size: 18px;
+    color: rgb(197, 128, 0);
+    margin-bottom: 10px !important;
+    font-weight: 600;
+}
+
+form a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 100px;
+    border-radius: 7px !important;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form a:hover {
+    background-color: rgb(196, 143, 30);
+    color: rgb(255, 216, 145) !important;
+}
+
+::placeholder {
+    color: rgb(180, 173, 173);
+}
+
+input:focus,
+form a:focus {
+    outline: none !important;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FOODING | Tambah Data Bahan Minuman</title>
+    <link th:href="@{/css/tambah-style.css?modified=20012009}" href="../static/css/tambah-style.css?modified=20012009" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a th:href="@{'/home'}">Admin</a></li>
+                <li class="breadcrumb-item"><a th:href="@{'/olahdata'}">Olah Data</a></li>
+                <li class="breadcrumb-item"><a th:href="@{'/dataminuman'}">Data Bahan Minuman</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Tambah Data Bahan Minuman</li>
+            </ol>
+        </nav>
+        <h1>TAMBAH DATA BAHAN MINUMAN</h1>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mx-auto py-3 content">
+                <div class="col-sm-12">
+                    <form action="#" th:action="@{/simpanminuman}" th:object="${fooding}" method="post">
+                        <label for="">Nama Bahan Minuman</label>
+                        <input type="hidden" th:field="*{ID_Bahan_Minuman}" />
+                        <input type="text" th:field="*{Nama}" placeholder="Masukkan Nama Bahan Minuman" />
+
+                        <label for="">Jenis Bahan Minuman</label>
+                        <input type="text" th:field="*{Jenis}" placeholder="Masukkan Jenis Bahan Minuman" />
+
+                        <label for="">Jumlah Stok</label>
+                        <input type="text" th:field="*{Stok}" placeholder="Masukkan Jumlah Stok" />
+
+                        <label for="">Satuan</label>
+                        <input type="text" th:field="*{Satuan}" placeholder="Masukkan Satuan" />
+
+                        <button type="submit">Simpan Data</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
+<script src="https://kit.fontawesome.com/9646d55fb3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

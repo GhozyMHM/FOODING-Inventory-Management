@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FOODING | Data Page</title>
+    <link th:href="@{/css/data-style.css?modified=20012009}" href="../static/css/data-style.css?modified=20012009" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+    <h1>FOODING INVENTORY MANAGEMENT</h1>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 sidebar">
+                <div class="admin">
+                    <a th:href="@{'/home'}"><i class="fas fa-user-circle"></i>Admin</a> <br>
+                </div>
+                <div class="data">
+                    <a class="active" th:href="@{'/olahdata'}"><i class="fas fa-database"></i>Olah Data</a>
+                </div>
+            </div>
+            <div class="col-sm-8 content">
+                <h2>PILIH DATA</h2>
+                <a th:href="@{'/bahanmakanan'}"><i class="fas fa-pizza-slice fa-fw"></i>Data Bahan Makanan</a>
+                <a th:href="@{'/bahanminuman'}"><i class="fas fa-wine-glass-alt fa-fw"></i>Data Bahan Minuman</a>
+                <a th:href="@{'/supplier'}"><i class="fas fa-box-open fa-fw"></i>Data Supplier</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
+<script src="https://kit.fontawesome.com/9646d55fb3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

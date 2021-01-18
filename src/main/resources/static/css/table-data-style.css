@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FDA766 !important;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 35px;
+    text-align: left;
+    text-shadow: 5px 2px 6px #2b2b2b;
+    letter-spacing: 2px;
+}
+
+header .container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+header i {
+    margin-right: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: black;
+}
+
+nav ol li {
+    font-weight: bold !important;
+}
+
+nav ol li {
+    color: black !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white !important;
+}
+
+.content {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 30px !important;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+}
+
+a.add {
+    align-self: flex-start;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a.add:hover {
+    background-color: rgb(125, 250, 125);
+    color: green;
+}
+
+a.add i {
+    margin-right: 7px;
+}
+
+table thead tr {
+    background-color: #FD7F2C;
+}
+
+table thead tr th {
+    color: white;
+}
+
+table a.edit {
+    color: rgb(7, 204, 7);
+}
+
+table a.delete {
+    color: red;
+}
+
+tr a {
+    cursor: pointer;
+}
+
+.modal a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.modal a:hover {
+    color: white;
+    background-color: rgb(197, 0, 0);
+}
